@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Social Media Platform</h1>
+    <div>
+        <h2>Create User</h2>
+        <form id="create-user-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Create User</button>
+        </form>
+    </div>
+    <div>
+        <h2>Create Post</h2>
+        <form id="create-post-form">
+            <input type="text" id="user-id" placeholder="User ID" required>
+            <textarea id="content" placeholder="Content" required></textarea>
+            <button type="submit">Create Post</button>
+        </form>
+    </div>
+    <div>
+        <h2>Get User</h2>
+        <form id="get-user-form">
+            <input type="text" id="get-user-id" placeholder="User ID" required>
+            <button type="submit">Get User</button>
+        </form>
+        <div id="user-data"></div>
+    </div>
+    <div>
+        <h2>Get Post</h2>
+        <form id="get-post-form">
+            <input type="text" id="get-post-id" placeholder="Post ID" required>
+            <button type="submit">Get Post</button>
+        </form>
+        <div id="post-data"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
